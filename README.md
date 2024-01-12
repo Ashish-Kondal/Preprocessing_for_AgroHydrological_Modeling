@@ -1,8 +1,8 @@
 # Preprocessing Scripts for VIC-CropSyst Simulations - Generate Meteorological Input Forcings.
 ## Author: Ashish Kondal (ashish.kondal@wsu.edu).
-## Date: January 11, 2024.
+Date: January 11, 2024.
 ## Description: Workflow to Generate Meteorological Input Forcings for VIC-CropSyst.
-## Detailed Description: This workflow is for generating input forcings for VIC-CropSyst using gridMET observations and the North American Multi-Model Ensemble (NMME) forecast product.
+Detailed Description: This workflow is for generating input forcings for VIC-CropSyst using gridMET observations and the North American Multi-Model Ensemble (NMME) forecast product.
   for a given year and initialization month, the NMME forecast goes for the next 8 months only and thus, lacks a whole year time series. This repository provides scripts for appending spin-up data to the NMME data, 
   re-gridding it to the VIC-CropSyst model resolution, and finally, generating input forcings for the VIC-CropSyst model.
 
