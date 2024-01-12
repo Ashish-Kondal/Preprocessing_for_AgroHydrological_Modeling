@@ -1,12 +1,12 @@
-*Author: Ashish Kondal (ashish.kondal@wsu.edu)
-*Date: January 11, 2024
-*Description: Workflow to Generate Meteorological Input Forcings for VIC-CropSyst.
-*Detailed Description: This workflow is for generating input forcings for VIC-CropSyst using gridMET observations and the North American Multi-Model Ensemble (NMME) forecast product.
+Author: Ashish Kondal (ashish.kondal@wsu.edu)
+Date: January 11, 2024
+Description: Workflow to Generate Meteorological Input Forcings for VIC-CropSyst.
+Detailed Description: This workflow is for generating input forcings for VIC-CropSyst using gridMET observations and the North American Multi-Model Ensemble (NMME) forecast product.
   for a given year and initialization month, the NMME forecast goes for the next 8 months only and thus, lacks a whole year time series. This repository provides scripts for appending spin-up data to the NMME data, 
   re-gridding it to the VIC-CropSyst model resolution, and finally, generating input forcings for the VIC-CropSyst model.
 
-*Note: The raw NMME data is at a coarse resolution and thus, requires spatiotemporal downscaling before using any of the following scripts.
-*Note: for some scripts, you might have to write batch scripts with required input variables. 
+Note: The raw NMME data is at a coarse resolution and thus, requires spatiotemporal downscaling before using any of the following scripts.
+Note: for some scripts, you might have to write batch scripts with required input variables. 
 
 1. Converting .mat format to ASCII
   Short Description: BiasCorrected NMME data was in .mat format (MATLAB native storage format) and needs to be converted into another format (such as ASCII) for subsequent processing.
